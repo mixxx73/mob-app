@@ -1,17 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Dashboard</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Welcome Mixxx73!</h2>
+  <div>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="/assets/imgs/avatar.jpeg" style="border-radius: 50%; max-width: 60px; max-height: 60px;"/>
+      </ion-thumbnail>
+      Logged as Michal Macierzynski
+    </ion-item>
+  </div>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    Total under management: &pound;{{ total }}
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Potential prospects: &pound;{{ potential }}
   </p>
 </ion-content>

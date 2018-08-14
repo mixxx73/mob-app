@@ -6,15 +6,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-content>
-    <ion-list>
-      <ion-list-header>Cases</ion-list-header>
-      <ion-item *ngFor="let contact of contacts">
-        <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
-        <p>Current case:{{ contact.state }}</p>
-        <button ion-button item-end>Open</button>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+<ion-content>
+  <ion-list>
+    <ion-list-header>Current Cases</ion-list-header>
+    <ion-item *ngFor="let contact of contacts">
+      <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+      <p>Current case:{{ contact.state }}</p>
+      <button ion-button item-end>Open</button>
+    </ion-item>
+  </ion-list>
 </ion-content>
